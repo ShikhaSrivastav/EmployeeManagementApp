@@ -122,10 +122,10 @@ public class DBManager{
                 MySqlCommand command= new MySqlCommand(query,con);
                 con.Open();
                 command.ExecuteNonQuery();
-
+                status=true;
             }
             catch(Exception e){
-
+                Console.WriteLine(e.Message);
             }
             finally{
                 con.Close();

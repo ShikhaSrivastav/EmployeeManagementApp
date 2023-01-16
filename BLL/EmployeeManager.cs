@@ -3,12 +3,12 @@ using BOL;
 using DAL;
 public class EmployeeManager
 {
-    public List<Employee>GetAllEmployees(){
+    public  List<Employee>GetAllEmployees(){
         List<Employee> allemployees=new List<Employee>();
         allemployees=DBManager.GetAllEmployees();
         return allemployees;
     }
-    public Employee GetEmployee(int id){
+    public  Employee GetEmployee(int id){
         // List<Employee> allemployees=new List<Employee>();
         // Employee foundEmp=allemployees.Find((emp)=>emp.Id==id);
         // return foundEmp;
